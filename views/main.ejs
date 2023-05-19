@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <title>Main Page</title>
+  </head>
+  <body>
+    <div class="container-fluid d-flex flex-column vh-100">
+      <div class="row flex-grow-1">
+        <%- include('./sidebar') %>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+          <a href="/logout" class="btn btn-primary">Logout</a>
+
+          <h1 class="h2">Welcome, <%= username %></h1>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
